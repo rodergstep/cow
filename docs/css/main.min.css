@@ -154,6 +154,7 @@ body {
 .frontpage {
   height: 100%;
   min-height: 100vh;
+  background-color: #336699;
   background-image: url("../img/bg__night-city.jpg");
   background-size: cover; }
 
