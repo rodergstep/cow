@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>What's My Property Value?</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="We estimate your property value ">
+  <meta name="keywords" content="#">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
   <!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
+	<![endif]-->
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <!-- Intellectual web font loader -->
@@ -34,7 +34,7 @@
     });
   </script>
 
-  <link href="css/main.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
 
   <!-- Custom Browsers Color Start -->
   <!-- Chrome, Firefox OS and Opera -->
@@ -44,73 +44,62 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
   <!-- Custom Browsers Color End -->
+
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="frontpage">
-      <div class="container">
-        <header class="header">
-          <div class="header__logo">
-            <a href="#"><img src="img/logo.svg" alt="Logo"></a>
+    <div class="stages-wrap">
+      <main class="stage--1">
+        <div class="timeline">
+          <div class="timeline__circle timeline__circle--one">
+            <span class="timeline__number--one">1</span>
+            <span class="timeline__check icon-checkmark"></span>
           </div>
-        </header>
-        <main class="frontpage__content">
-          <section class="input-block">
-            <h2 class="input-block__title">Enter your Address</h2>
-            <form action="#" class="input-block__form">
-              <input type="text" class="form__address" name="addresss" placeholder="Address">
-              <input type="text" class="form__unit" name="unit" placeholder="Unit #">
-              <button type="submit" class="form__notify">Submit</button>
-            </form>
-          </section>
-        </main>
-        <footer class="footer">
-          <nav class="footer__menu">
-            <div class="footer__menu-left">
-              <a href="#" class="footer__menu-item">Powered by</a>
+          <span class="timeline__progress"></span>
+
+          <div class="timeline__circle timeline__circle--two">
+            <span class="timeline__number--two">2</span>
+            <span class="timeline__check icon-checkmark"></span>
+          </div>
+          <span class="timeline__progress"></span>
+
+          <div class="timeline__circle timeline__circle--three">
+            <span class="timeline__number--three">3</span>
+            <span class="timeline__check icon-checkmark"></span>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="content__header">
+            <h1 class="header__title">Is this correct Address</h1>
+          </div>
+
+          <div class="content__main">
+            <div id="map"></div>
+          </div>
+
+          <div class="content__footer">
+            <div class="content__question-container">
+              <p class="content__question">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+              <button class="content__answer content__answer--no">no</button>
+              <button class="content__answer content__answer--yes">yes</button>
             </div>
-            <div class="footer__menu-right">
-              <a href="#" class="footer__menu-item">Home</a>
-              <a href="#" class="footer__menu-item">Privacy Policy</a>
-            </div>
-          </nav>
-        </footer>
-      </div>
+          </div>
+
+        </div>
+      </main>
     </div>
   </div>
 
 
   <!-- Loading JS files -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-  <script>
-    var tl = new TimelineMax();
-    tl
-      .fromTo('.header__logo', 0.6, {
-        opacity: 0
-
-      }, {
-        opacity: 1
-      })
-
-    .fromTo('.input-block__title', 0.6, {
-        y: -50,
-        opacity: 0
-      }, {
-        y: 0,
-        opacity: 1
-      })
-      .fromTo('.input-block__form', 0.4, {
-        opacity: 0
-      }, {
-        opacity: 1
-      })
-      .fromTo('.footer__menu', 1, {
-        opacity: 0
-      }, {
-        opacity: 1
-      })
-  </script>
+  <!-- Google Map JS -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+  <script src="js/libs/google_map.min.js"></script>
+  <!-- custom JS -->
   <script src="js/main.min.js"></script>
 
 </body>
