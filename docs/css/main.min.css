@@ -131,8 +131,8 @@ a:hover {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/icomoon/icomoon.eot?i611eg");
-  src: url("../../fonts/icomoon/icomoon.eot?i611eg#iefix") format("embedded-opentype"), url("../../fonts/icomoon/icomoon.ttf?i611eg") format("truetype"), url("../../fonts/icomoon/icomoon.woff?i611eg") format("woff"), url("../../fonts/icomoon/icomoon.svg?i611eg#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.eot?i611eg");
+  src: url("../fonts/icomoon/icomoon.eot?i611eg#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?i611eg") format("truetype"), url("../fonts/icomoon/icomoon.woff?i611eg") format("woff"), url("../fonts/icomoon/icomoon.svg?i611eg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
